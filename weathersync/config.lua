@@ -21,7 +21,7 @@ Config.weatherTypes = Config.isRDR and RDR2WeatherTypes or GTAVWeatherTypes
 -- hour		0-23
 -- minute	0-59
 -- second	0-59
-Config.time = DHMSToTime(0, 6, 0, 0)
+Config.time = DHMSToTime(0, 12, 0, 0)
 
 -- Default ratio of in-game seconds to real seconds. Standard game time is 30:1, or 1 in-game minute = 2 real seconds. A value of 0 means time will be synced with the real server time.
 Config.timescale = 10
@@ -33,7 +33,7 @@ Config.realTimeOffset = 0
 Config.timeIsFrozen = false
 
 -- Default weather when the resource starts
-Config.weather = Config.isRDR and "rain" or "clear"
+Config.weather = Config.isRDR and "clear" or "clear" -- rain?
 --Config.weather = Config.isRDR and "snow" or "snowlight"
 
 -- The interval (in-game time) between weather changes
